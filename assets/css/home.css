@@ -120,3 +120,18 @@ button{
   a:hover{
     color: #9f0fc4;
   }  
+
+  .footer-text {
+    position: absolute;
+    bottom: 40px; /* Ajusta a distância da parte inferior da tela */
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 15px;
+    color: #ffffff; /* Cor do texto branca */
+    font-weight: bold;
+    text-align: center;
+    padding: 5px 10px; /* Espaçamento ao redor do texto */
+    border-radius: 5%; /* Bordas arredondadas */
+    background-color: rgba(98, 151, 163, 0.125); /* Fundo preto semi-transparente */
+    box-shadow: 3px 3px 1px 0px #00000010;
+}
