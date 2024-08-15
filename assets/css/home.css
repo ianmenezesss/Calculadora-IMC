@@ -115,6 +115,11 @@ button{
     color: #308d8f;
     font-weight: bold;
     transition: all .3s ease-out;
+    
+  }
+
+  .hyperlink-footer{
+    text-decoration: none;
   }
   
   a:hover{
@@ -122,16 +127,16 @@ button{
   }  
 
   .footer-text {
-    position: absolute;
-    bottom: 40px; /* Ajusta a distância da parte inferior da tela */
+    position: fixed;
+    bottom: 0px; /* Ajusta a distância da parte inferior da tela */
     left: 50%;
     transform: translateX(-50%);
     font-size: 15px;
-    color: #000; /* Cor do texto branca */
+    color: #000; 
     font-weight: bold;
     text-align: center;
     padding: 5px 10px; /* Espaçamento ao redor do texto */
     border-radius: 5%; /* Bordas arredondadas */
-    background-color: rgba(98, 151, 163, 0.125); /* Fundo preto semi-transparente */
+    background-color: rgba(98, 151, 163, 0.125); 
     box-shadow: 3px 3px 1px 0px #00000010;
 }
