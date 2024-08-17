@@ -4,39 +4,55 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/home.css">
+    <script src="../IMC/assets/js/scripts.js" defer></script>
     <title>Calculadora IMC</title>
 </head>
 <body>
-    <div class="container">
+    <div class="container" >
         <div class="card">
-            <h1>IMC</h1>
+            <div id="calc-container">
+                <h1>IMC</h1>
 
-            <div class="label-float" >
-                <input type="text" id="altura" placeholder="" required />
-                <label for="altura">Altura (cm):</label>
+                <div class="label-float" >
+                    <input type="text" id="altura" placeholder="" required />
+                    <label for="altura">Altura (cm):</label>
+                </div>
+
+                <div class="label-float" >
+                    <input type="text" id="peso" placeholder="" required />
+                    <label for="peso">Peso (kg): </label>
+                </div>
+
+                <div class="justify-center" class="action-control">
+                    <button id="calc-btn" >Calcular</button>
+                </div>
+
+                <div class="justify-center">
+                    <hr>
+                </div>
+
+                <p>Dicas sobre saúde e nutrição? <a href="https://www.instagram.com/jv.estudnutri/">Acesse meu Instagram!</a> </p>
             </div>
-
-            <div class="label-float" >
-                <input type="text" id="peso" placeholder="" required />
-                <label for="peso">Peso (kg): </label>
-            </div>
-
-            <div class="justify-center">
-                <button  onclick="" >Calcular</button>
-            </div>
-
-            <div class="justify-center">
-                <hr>
-            </div>
-
-            <p>Dicas sobre saúde e nutrição? <a href="https://www.instagram.com/jv.estudnutri/">Acesse meu Instagram!</a> </p>
-
             <div class="footer-text">
                 Desenvolvido por <a class="hyperlink-footer" href="https://www.linkedin.com/in/ianmenezesss/">&lt;Ian/Menezes&gt;</a>
             </div>
 
+            
 
-
+        
+            <div id="result-container" class="hide">
+                <p id="imc-number">Seu IMC: <span></span></p>
+                <p id="imc-info">Situação Atual: <span ></span></p>
+                <h3>Confira as classificações: </h3>
+                <div id="imc-table">
+                    <div class="table-header">
+                        <h4>IMC</h4>
+                        <h4>Clasificação</h4>
+                        <h4>Obesidade</h4>
+                    </div>
+                </div>
+                <button id="back-btn">Voltar</button>
+            </div>
         </div>
     </div>
 </body>

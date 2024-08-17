@@ -7,7 +7,7 @@
   }
 
 body {
-    background-image: url("../images/Tomatoes_550946_1920x1080.jpg");
+    /*background-image: url("../images/9357793-horizontal-leite-alimento-fundo-vetor.jpg");*/
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -78,20 +78,22 @@ button{
     background-color: transparent;
     border-color: #534b4b;
     color: #000;
-    padding: 7px;
+    padding: 9px;
     font-weight: bold;
-    font-size: 12pt;
+    font-size: 13pt;
     margin-top: 10px;
     border-radius: 4px;
     cursor: pointer;
     outline: none;
     transition: all .4s ease-out;
+    min-width: 100px;
+    min-height: 40px;
   }
   button:hover{
     background-color: #796767;
     color: #fff;
   }
-  
+
   .justify-center{
     display: flex;
     justify-content: center;
@@ -108,11 +110,12 @@ button{
     font-size: 14pt;
     text-align: center;
     font-weight: bold;
+    margin-top: 4%;
     
   }
   
   a{
-    color: #308d8f;
+    color: #862a8f;
     font-weight: bold;
     transition: all .3s ease-out;
     
@@ -123,7 +126,7 @@ button{
   }
   
   a:hover{
-    color: #27c8ce;
+    color: #c928d8;
   }  
 
   .footer-text {
@@ -139,4 +142,93 @@ button{
     border-radius: 5%; /* Bordas arredondadas */
     background-color: rgba(98, 151, 163, 0.125); 
     box-shadow: 3px 3px 1px 0px #00000010;
+}
+
+.hide{
+  display: none !important;
+  
+}
+
+#result-container{
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+#imc-number{
+  font-size: 2.4rem;
+  margin-bottom: 0.6rem;
+}
+
+#imc-info{
+  font-size: 1.4rem;
+  color: #000000;
+}
+
+#result-container h3{
+  margin-top: 1rem;
+}
+
+#imc-table{
+  margin: 1.5rem 0;
+  font-size: 0.8rem;
+}
+
+.table-header{
+  font-weight: bold;
+  color: #250abe;
+}
+
+.table-header, 
+.table-data{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid #4444;
+}
+
+.table-header h4, 
+.table-data p1{
+  flex: 1;
+  font-weight: bold;
+}
+
+p1{
+  font-size: 11pt;
+}
+
+h4{
+  font-size: 13pt;
+}
+
+.card #result-container{
+  width: 100%;
+  min-width: 400px;
+  min-height: 400px;
+}
+
+.table-header h4:nth-child(3),
+.table-data p1:nth-child(3){
+  max-width: 110px;
+}
+
+#back-btn{
+  align-self: center;
+}
+
+.good{
+  color: #12db34;
+}
+
+.low{
+  color: #dbce12;
+}
+
+.medium{
+  color: #db6212;
+}
+
+.high{
+  color: #db1912;
 }
