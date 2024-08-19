@@ -29,7 +29,7 @@ const data = [
     },
     {
       min: 40,
-      max: 99,
+      max: 9999900,
       classificacao: "Maior que 40,0",
       info: "Obesidade grave",
       obesidade: "III",
