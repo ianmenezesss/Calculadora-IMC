@@ -11,6 +11,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+    background-color: rgb(81, 159, 177);
   }
 
 .container{
@@ -20,7 +21,7 @@ body {
     margin-top: 100px;
 }
 .card{
-    background-color: rgba(35, 45, 48, 0.125);
+    background-color: rgb(247, 244, 244);
     padding: 30px;
     border-radius: 5%;
     box-shadow: 3px 3px 1px 0px #00000050;
@@ -35,7 +36,7 @@ h1{
     width: 100%;
     padding: 5px 5px;
     display: inline-block;
-    border: 2px solid #969580;
+    border: 2px solid rgb(129, 119, 119);
     background-color: transparent;
     outline: none;
     min-width: 180px;
@@ -53,7 +54,7 @@ h1{
   }
   
   .label-float input:focus{
-    border: 2px solid #b1af89;
+    border: 2px solid rgb(0, 0, 0);
   }
 
   .label-float label{
@@ -76,7 +77,7 @@ h1{
 
 button{
     background-color: transparent;
-    border-color: #534b4b;
+    border-color: #000;
     color: #000;
     padding: 9px;
     font-weight: bold;
@@ -89,8 +90,9 @@ button{
     min-width: 100px;
     min-height: 40px;
   }
+
   button:hover{
-    background-color: #796767;
+    background-color: rgb(129, 119, 119);
     color: #fff;
   }
 
@@ -140,7 +142,7 @@ button{
     text-align: center;
     padding: 5px 10px; /* Espaçamento ao redor do texto */
     border-radius: 5%; /* Bordas arredondadas */
-    background-color: rgba(98, 151, 163, 0.125); 
+    background-color: rgb(247, 244, 244, 0.180);
     box-shadow: 3px 3px 1px 0px #00000010;
 }
 
